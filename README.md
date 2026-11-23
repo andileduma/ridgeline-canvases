@@ -1,2 +1,1 @@
-# ridgeline-canvases
-Ridgeline Studio Interactive Estate Enquiry Canvases
+# Ridgeline Studio Interactive Estate Enquiry Canvases
