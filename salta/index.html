@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salta Sibaya — Enquiry &amp; Desk Routing Walkthrough | Ridgeline Studio</title>
+  <meta name="description" content="Interactive Enquiry &amp; Desk Routing Walkthrough tailored to Salta Sibaya (saltasibaya.co.za), its live enquiry forms, and operational desk routing.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F232E'/%3E%3Cpath d='M9 22V13c0-3.5 2.5-6 6-6h2c3.5 0 6 2.5 6 6v9' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Didact+Gothic&family=JetBrains+Mono:wght@400;500;600&family=Karla:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Libre+Franklin:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&family=Nunito:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-estate="salta">
+  <!-- Header: Strict Single-Estate Identity (Zero Competitor Switcher) -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand-cluster">
+        <div class="brand-crest" id="brandCrest" aria-hidden="true"><svg viewBox="0 0 36 36" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M6 25l12-13 12 13"/>
+        <path d="M11 25h14M6 30c6-2.5 18-2.5 24 0"/>
+      </svg></div>
+        <div class="brand-wordmark">
+          <span class="brand-name" id="brandName">Salta Sibaya</span>
+          <span class="brand-sub" id="brandLocation">1 Salta Blvd, Sibaya / Umdloti · Innova Haus</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <span class="concept-badge">Interactive Walkthrough</span>
+        <button type="button" class="btn-ghost-sm" id="resetSimHeaderBtn">Reset Walkthrough</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: 60/40 Editorial Hero + Verified Operational Desk Card -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-frame">
+          <div class="hero-grid">
+            <div class="hero-editorial">
+              <div class="eyebrow-row">
+                <span class="eyebrow-tag" id="heroEyebrow">3-Way Split: Devmco Realty · RainMaker · HOA Admin</span>
+                <span class="live-domain-chip" id="heroDomain">saltasibaya.co.za</span>
+              </div>
+              <h1 class="hero-title" id="heroTitle">Five Sibaya coastal lifestyles, zero form friction.</h1>
+              <p class="hero-lead" id="heroLead">Fixes the Solara Salta dropdown omission, bypasses Capri Village’s 8-character Markt password wall for 50+ buyers, and cleanly splits Devmco Realty developer sales, RainMaker CRM attribution, and HOA Admin.</p>
+
+              <div class="hero-cta-row">
+                <a href="#phase-capture" class="btn-primary" id="heroPrimaryCta">Test Live Enquiry Flow</a>
+                <a href="#audit-comparison" class="btn-secondary" id="heroSecondaryCta">See Current Website Friction</a>
+              </div>
+
+              <div class="hero-metrics-strip" id="heroMetricsStrip"></div>
+            </div>
+
+            <aside class="hero-desk-card">
+              <div class="desk-card-top">
+                <div class="desk-svg-stage" id="heroArchitecturalSvg" aria-hidden="true"><svg viewBox="0 0 72 72" width="52" height="52" fill="none" stroke="#1F232E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="12" y="28" width="24" height="24" rx="2" fill="#E7F0F0"/>
+        <rect x="30" y="18" width="28" height="34" rx="2" fill="#FFFFFF" stroke="#8BACAD"/>
+        <line x1="8" y1="58" x2="64" y2="58" stroke="#121D2E"/>
+        <path d="M10 64c12-3 40-3 52 0" stroke="#8BACAD"/>
+      </svg></div>
+                <div class="desk-card-meta">
+                  <span class="mono-label">Verified Operational Desk</span>
+                  <h2 class="desk-card-title" id="deskCardTitle">Innova Haus 3-Desk Split (Marine Walk)</h2>
+                  <p class="desk-card-contact" id="deskCardContact">RainMaker (1st Fl) hello@rainmakermarketing.co.za · Devmco (Grnd Fl) info@devmcorealty.co.za · HOA admin@saltasibaya.co.za</p>
+                </div>
+              </div>
+
+              <div class="desk-nuance-box" id="deskNuanceBox">
+                <span class="mono-label">Strategic Alignment</span>
+                <p id="deskNuanceCopy">Devmco Realty handles 7-day plot and turnkey sales (Ground Floor, Innova Haus), RainMaker Marketing owns campaigns &amp; Markt CRM (First Floor), while admin@saltasibaya.co.za handles HOA governance.</p>
+              </div>
+
+              <div class="leakage-callout">
+                <span class="mono-label mono-alert">Observed Live Website Leakage</span>
+                <p id="deskLeakageCopy">Gravity Form #9 omits Solara Salta from “Interested in*” and lacks a message box; caprivillagesalta.co.za forces 50+ buyers to create a Markt password; /sales/ displays a stale 2020-10-30 Capri R2.705M notice.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Phase 1 — Persona Selector & Tailored Entry Form -->
+    <section class="section-capture" id="phase-capture">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <span class="eyebrow-tag">Phase 01 &middot; Specialized Intent Capture</span>
+            <h2 class="section-title" id="phase1Title">Choose a real visitor scenario or submit your own enquiry</h2>
+          </div>
+          <p class="section-subtitle" id="phase1Subtitle"></p>
+        </div>
+
+        <!-- 3-Lane Interactive Persona Presets -->
+        <div class="persona-lanes" id="personaLanes" role="tablist" aria-label="Visitor Persona Scenarios"></div>
+
+        <!-- Split Form + Live Pre-Qualification Preview -->
+        <div class="capture-grid">
+          <form class="enquiry-form-card" id="simulatorForm" novalidate>
+            <div class="form-card-header">
+              <div>
+                <span class="mono-label">Replaces Current Website Friction</span>
+                <h3 class="form-card-title" id="formCardTitle">5-Precinct Frictionless Triage</h3>
+              </div>
+              <button type="button" class="btn-sample-fill" id="fillSampleBtn">1-Click Fill Scenario</button>
+            </div>
+
+            <div class="form-fields-grid">
+              <div class="field-group">
+                <label for="inputFullName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="inputFullName" name="fullName" placeholder="e.g. Claire van der Merwe" required>
+              </div>
+
+              <div class="field-group">
+                <label for="inputEmail">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="inputEmail" name="email" placeholder="e.g. claire@example.co.za" required>
+              </div>
+
+              <div class="field-group">
+                <label for="inputPhone">Mobile / WhatsApp Number</label>
+                <input type="tel" id="inputPhone" name="phone" placeholder="e.g. +27 82 555 0148">
+              </div>
+
+              <div class="field-group">
+                <label for="inputIntent">Enquiry Intent <span aria-hidden="true">*</span></label>
+                <select id="inputIntent" name="intent" required></select>
+              </div>
+
+              <div class="field-group">
+                <label for="inputSecondary" id="labelSecondary">Preferred Sibaya Precinct</label>
+                <select id="inputSecondary" name="secondary"></select>
+              </div>
+
+              <div class="field-group">
+                <label for="inputTertiary" id="labelTertiary">Budget / Intent Tier</label>
+                <select id="inputTertiary" name="tertiary"></select>
+              </div>
+            </div>
+
+            <div class="field-group field-full">
+              <label for="inputMessage">Your Question or Requirement</label>
+              <textarea id="inputMessage" name="message" rows="3" placeholder="Ask a specific question about homes, rules, architectural guidelines, or amenities..."></textarea>
+            </div>
+
+            <label class="popia-consent-row">
+              <input type="checkbox" id="inputPopia" checked>
+              <span id="popiaCopy">Replaces 15-field Gravity Forms with transparent routing between Devmco Realty (Sales) and Salta HOA Admin.</span>
+            </label>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn-primary btn-submit-lg" id="submitEnquiryBtn">
+                <span>Submit Enquiry &amp; See Live Routing</span>
+                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <span class="form-hint" id="formHintText">Interactive walkthrough &mdash; zero real emails or forms leave your browser.</span>
+            </div>
+          </form>
+
+          <aside class="persona-context-panel" id="personaContextPanel">
+            <span class="mono-label">Selected Visitor Context</span>
+            <h3 class="context-panel-title" id="contextPanelTitle"></h3>
+            <p class="context-panel-desc" id="contextPanelDesc"></p>
+
+            <div class="context-facts-list">
+              <span class="mono-label">What They Usually Ask Today</span>
+              <ul id="contextQuestionsList"></ul>
+            </div>
+
+            <div class="context-fix-box">
+              <span class="mono-label">How This Protects Your Desk</span>
+              <p id="contextFixSummary"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Phase 2 — Animated 5-Step Journey Rail + 50/50 Synced Crossfade Stage -->
+    <section class="section-canvas is-standby" id="phase-canvas" aria-live="polite">
+      <div class="container">
+        <div class="canvas-topbar">
+          <div>
+            <span class="eyebrow-tag" id="canvasEyebrow">Phase 02 &middot; Live Enquiry &amp; Desk Routing Journey</span>
+            <h2 class="section-title" id="canvasTitle">Behind-the-Scenes Desk &amp; Buyer Journey</h2>
+          </div>
+          <div class="canvas-controls">
+            <span class="sim-status-pill" id="simStatusPill">Preview Mode &mdash; Submit Form Above to Run</span>
+            <button type="button" class="btn-ghost-sm" id="replayRouteBtn">Replay Journey</button>
+            <button type="button" class="btn-ghost-sm" id="resetCanvasBtn">Try Another Scenario</button>
+          </div>
+        </div>
+
+        <!-- 5-Node Animated Timeline Rail -->
+        <div class="route-rail-wrapper">
+          <div class="route-progress-track" aria-hidden="true">
+            <div class="route-progress-fill" id="routeProgressFill"></div>
+          </div>
+          <div class="route-nodes-grid" id="routeNodesGrid" role="tablist" aria-label="Routing Steps 01 to 05"></div>
+        </div>
+
+        <!-- 50/50 Synced Crossfade Stage -->
+        <div class="stage-grid">
+          <!-- Left 50%: Operational Inspection Pane -->
+          <div class="stage-left-panel" id="stageLeftPanel">
+            <div class="stage-step-header">
+              <span class="stage-step-badge" id="stageStepBadge">Step 01 &middot; 00:02s</span>
+              <span class="stage-time-chip" id="stageTimeChip">Instant Trigger</span>
+            </div>
+            <h3 class="stage-heading" id="stageHeading">Instant Website Capture &amp; Zero-Drop Log</h3>
+            <p class="stage-summary" id="stageSummary"></p>
+
+            <div class="stage-meta-cards" id="stageMetaCards"></div>
+
+            <div class="stage-nav-footer">
+              <button type="button" class="btn-step-nav" id="prevStepBtn">&larr; Previous Step</button>
+              <button type="button" class="btn-step-nav is-primary" id="nextStepBtn">Next Step &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Right 50%: Interactive Live Email / Desk Brief / Day 1-2 Output Stage -->
+          <div class="stage-right-panel" id="stageRightPanel">
+            <div class="preview-toolbar">
+              <div class="preview-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-window-title" id="previewWindowTitle">Live System Payload &amp; Output</span>
+              <div class="followup-tabs" id="followupTabs" hidden>
+                <button type="button" class="followup-tab is-active" data-day="day1">Day 1 (24h)</button>
+                <button type="button" class="followup-tab" data-day="day2">Day 2 (48h)</button>
+              </div>
+            </div>
+            <div class="preview-body" id="previewBody"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Verified Live Website Friction vs Automated Desk Routing & Self-Service Rulebook -->
+    <section class="section-audit" id="audit-comparison">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <span class="eyebrow-tag">Verified Pre-Build Audit &amp; Document Deflection</span>
+            <h2 class="section-title" id="auditSectionTitle">Why this architecture fits your estate today</h2>
+          </div>
+          <p class="section-subtitle" id="auditSectionSubtitle"></p>
+        </div>
+
+        <div class="audit-split-grid">
+          <div class="audit-comparison-card">
+            <div class="audit-col-header">
+              <span class="mono-label">Side-by-Side Operational Shift</span>
+              <h3>Current Website Experience vs. Automated Desk Routing</h3>
+            </div>
+            <div class="audit-rows" id="auditRowsContainer"></div>
+          </div>
+
+          <div class="faq-concierge-card">
+            <div class="audit-col-header">
+              <span class="mono-label">Instant Document &amp; Governance Lookup</span>
+              <h3 id="rulebookTitle">Sample Instant Rulebook Answers</h3>
+            </div>
+            <div class="faq-list" id="rulebookFaqList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Ridgeline Studio</strong> &middot; Enquiry &amp; Desk Routing Walkthrough
+      </div>
+      <div class="footer-note" id="footerAttribution">
+        Enquiry &amp; Desk Routing Walkthrough tailored to Salta Sibaya (saltasibaya.co.za) &mdash; nothing built upfront on your live website.
+      </div>
+    </div>
+  </footer>
+
+  <script src="estates-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
