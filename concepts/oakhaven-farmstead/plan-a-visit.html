@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan a Farmstead Visit | Oakhaven Farmstead</title>
+  <meta name="description" content="Connect with our Estate Sales Desk, Stable Master, or Architectural Review Desk and receive clear answers on boreholes, stabling, and barn rules within two minutes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark">Oakhaven Farmstead</a>
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">The Farmstead</a>
+        <a href="equestrian-orchards.html" class="nav-link">Equestrian &amp; Orchards</a>
+        <a href="smallholdings.html" class="nav-link">Smallholdings</a>
+        <a href="plan-a-visit.html" class="nav-link" aria-current="page">Plan a Visit</a>
+        <a href="plan-a-visit.html#equestrian-visit" class="nav-utility">Residents &amp; Stables</a>
+      </nav>
+      <button type="button" class="menu-toggle" data-menu-open aria-expanded="false" aria-controls="mobile-drawer">
+        <span>Menu</span>
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer aria-hidden="true">
+    <div class="mobile-drawer-head">
+      <span class="brand-wordmark">Oakhaven Farmstead</span>
+      <button type="button" class="menu-toggle" data-menu-close style="color: var(--base);">Close</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">The Farmstead</a></li>
+      <li><a href="equestrian-orchards.html">Equestrian &amp; Orchards</a></li>
+      <li><a href="smallholdings.html">Smallholdings</a></li>
+      <li><a href="plan-a-visit.html">Plan a Visit</a></li>
+      <li><a href="plan-a-visit.html#equestrian-visit" style="color: var(--accent-soft);">Residents &amp; Stables</a></li>
+    </ul>
+    <p class="t-micro" style="opacity: 0.72;">KwaZulu-Natal Midlands, South Africa</p>
+  </div>
+
+  <main>
+    <section class="masthead surface-base">
+      <div class="container">
+        <div class="masthead-grid">
+          <div class="masthead-copy">
+            <p class="t-micro t-accent">Plan a Visit &amp; Estate Desks</p>
+            <h1 class="t-hero">Straight answers on boreholes, stabling, and barn rules within two minutes.</h1>
+            <p class="t-body t-muted">No heavy manuals to download first. Choose the desk that matches your question and see the plain-English reply we send right away.</p>
+          </div>
+          <div class="masthead-frame">
+            <img src="images/orchards-harvest.jpg" alt="Sunlit pecan orchard lane welcoming visitors to Oakhaven Farmstead">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band surface-alt" id="desk-router">
+      <div class="container" data-desk-router>
+        <div class="section-head" data-reveal="text">
+          <p class="t-micro t-accent">Farmstead Desk Routing</p>
+          <h2 class="t-section">Select the desk that best fits your plans.</h2>
+          <p class="t-body t-muted">Each enquiry routes directly to the person on the farm who handles it daily, with a clear two-minute reply.</p>
+        </div>
+
+        <div class="desk-selector" role="group" aria-label="Choose your Oakhaven desk">
+          <button type="button" class="desk-option is-active" id="acreage-buyer" data-lane-trigger="acreage-buyer" aria-pressed="true">
+            <span class="t-micro desk-option__tag">Estate Sales Desk</span>
+            <span class="t-sub">Acreage &amp; Homestead Buyer</span>
+            <span class="t-body t-muted">For buyers comparing Orchard Acreage, Paddock Ridge stands, borehole yields, levies, and private land walks.</span>
+          </button>
+          <button type="button" class="desk-option" id="equestrian-visit" data-lane-trigger="equestrian-visit" aria-pressed="false">
+            <span class="t-micro desk-option__tag">Stable Master &amp; Sales Desk</span>
+            <span class="t-sub">Equestrian &amp; Stabling Visit</span>
+            <span class="t-body t-muted">For riders asking about eighteen-stall barn livery, private home paddocks, arenas, bridle trails, and horsebox access.</span>
+          </button>
+          <button type="button" class="desk-option" id="architect-guidelines" data-lane-trigger="architect-guidelines" aria-pressed="false">
+            <span class="t-micro desk-option__tag">Architectural Review Desk</span>
+            <span class="t-sub">Architect &amp; Barn Guidelines</span>
+            <span class="t-body t-muted">For buyers and architects wanting a clear plain-English summary of fieldstone, roof pitch, timber, and approval timelines.</span>
+          </button>
+        </div>
+
+        <div class="desk-router-grid">
+          <div>
+            <div style="margin-bottom: 2.5rem;">
+              <p class="t-micro t-accent" data-out-desk>Estate Sales Desk</p>
+              <h3 class="t-sub" style="margin-top: 0.45rem;" data-out-advisor>Rory MacLeod · Farmstead Sales Director</h3>
+              <p class="t-body t-muted" style="margin-top: 0.65rem;" data-out-summary>For buyers comparing Orchard Acreage, Paddock Ridge stands, borehole yields, levies, and private land walks.</p>
+            </div>
+
+            <form class="editorial-form" data-desk-form>
+              <div class="field-group">
+                <label class="t-micro t-muted" for="oh-name">Your Full Name</label>
+                <input class="field-input" id="oh-name" name="fullName" type="text" required data-form-name placeholder="e.g. Claire Henderson">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="oh-email">Email Address</label>
+                <input class="field-input" id="oh-email" name="email" type="email" required data-form-email placeholder="name@example.co.za">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="oh-phone">Telephone Number</label>
+                <input class="field-input" id="oh-phone" name="telephone" type="tel" required data-form-phone placeholder="+27 82 000 0000">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="oh-select" data-form-select-label>Smallholding Interest</label>
+                <select class="field-select" id="oh-select" name="selection" data-form-select>
+                  <option value="Orchard Acreage (2.2 to 3.5 ha)">Orchard Acreage (2.2 to 3.5 ha)</option>
+                  <option value="Paddock Ridge Stands (4.0 to 6.0 ha)">Paddock Ridge Stands (4.0 to 6.0 ha)</option>
+                  <option value="Upcoming Completed Barn Homestead">Upcoming Completed Barn Homestead</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="oh-date" data-form-date-label>Preferred Visit Window</label>
+                <input class="field-input" id="oh-date" name="preferredDate" type="text" data-form-date placeholder="Weekday morning or Saturday">
+              </div>
+
+              <div>
+                <button type="submit" class="btn-primary" data-form-submit>Send to Estate Sales Desk</button>
+              </div>
+
+              <div class="form-feedback t-body" data-form-feedback role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="sticky-col" style="display: flex; flex-direction: column; gap: 2.5rem;" aria-live="polite">
+            <div class="reply-preview-panel">
+              <div class="reply-email-head">
+                <span class="t-micro t-accent" data-out-timing>Delivered within two minutes</span>
+                <h3 class="t-sub" data-out-subject>Oakhaven smallholding availability, borehole yields &amp; visit times</h3>
+                <p class="t-micro t-muted" data-out-from>Rory MacLeod · Oakhaven Estate Sales Desk</p>
+              </div>
+              <p class="t-body" data-out-body>Good day, and thank you for your interest in Oakhaven Farmstead. We currently have Portions 05 and 08 available in Orchard Acreage (2.4 to 3.2 hectares, tested boreholes at 3,800 to 4,600 litres per hour) and Portions 16 and 19 on Paddock Ridge (4.6 to 5.8 hectares, tested at 5,400 to 6,100 litres per hour). Monthly farmstead levies are R 3,850 per holding, covering twenty-four-hour gatehouse security, gravel road upkeep, bridle trails, and shared orchard management. I have open farm-walk slots this Friday morning and Saturday morning — reply with what suits your family and bring comfortable walking shoes.</p>
+            </div>
+
+            <div class="handoff-brief">
+              <p class="t-micro" style="color: var(--accent-soft);">Routed Estate Desk Brief</p>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Routed To</p>
+                <p class="t-body" data-out-routed>Estate Sales Desk (Rory MacLeod)</p>
+              </div>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Priority</p>
+                <p class="t-body" data-out-priority>Smallholding Buyer · Borehole &amp; Land Walk</p>
+              </div>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Prepared Action</p>
+                <p class="t-body" style="color: rgba(250, 246, 240, 0.86);" data-out-action>Print borehole test certificates for Portions 05, 08, 16, and 19 and prepare farm bakkie for boundary walk.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="band surface-base">
+      <div class="container">
+        <div class="section-head" data-reveal="text">
+          <p class="t-micro t-accent">Direct Farmstead Details</p>
+          <h2 class="t-section">Speak directly with the team on the land.</h2>
+        </div>
+
+        <div class="ledger-list">
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Address</span>
+            <span class="t-body">Old R103 Midlands Meander, KwaZulu-Natal Midlands, South Africa</span>
+            <span class="t-micro t-muted">Viewing Hours</span>
+            <span class="t-body t-muted">Farmstead walks and stable visits daily by appointment, 08:00 to 16:30.</span>
+          </div>
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Estate Sales Desk</span>
+            <span class="t-body">+27 33 012 4480</span>
+            <span class="t-micro t-muted">Email</span>
+            <span class="t-body">sales@oakhavenfarmstead.co.za</span>
+          </div>
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Stable Master</span>
+            <span class="t-body">+27 33 012 4485</span>
+            <span class="t-micro t-muted">Email</span>
+            <span class="t-body">stables@oakhavenfarmstead.co.za</span>
+          </div>
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Architectural Review</span>
+            <span class="t-body">By appointment</span>
+            <span class="t-micro t-muted">Email</span>
+            <span class="t-body">design@oakhavenfarmstead.co.za</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <p class="t-sub">Oakhaven Farmstead</p>
+          <p class="t-body" style="color: rgba(250, 246, 240, 0.76); max-width: 28rem;">Morning paddock rides from your own gate, sunlit pecan orchards, and honest barn architecture in the KZN Midlands.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <p class="t-micro" style="color: var(--accent-soft);">Navigation</p>
+          <ul class="footer-nav">
+            <li><a href="index.html">The Farmstead</a></li>
+            <li><a href="equestrian-orchards.html">Equestrian &amp; Orchards</a></li>
+            <li><a href="smallholdings.html">Smallholdings</a></li>
+            <li><a href="plan-a-visit.html">Plan a Visit</a></li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <p class="t-micro" style="color: var(--accent-soft);">Farmstead Desks</p>
+          <p class="t-body" style="color: rgba(250, 246, 240, 0.78);">Old R103 Midlands Meander, KwaZulu-Natal Midlands, South Africa</p>
+          <p class="t-micro" style="color: rgba(250, 246, 240, 0.78);">sales@oakhavenfarmstead.co.za</p>
+          <p class="t-micro" style="color: rgba(250, 246, 240, 0.78);">stables@oakhavenfarmstead.co.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="t-micro" style="color: rgba(250, 246, 240, 0.64);">Private farmstead visits by appointment. Oakhaven Farmstead Homeowners Association.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
