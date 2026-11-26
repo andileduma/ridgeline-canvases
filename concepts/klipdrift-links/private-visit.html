@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrange a Private Visit | Klipdrift Links &amp; Country Club</title>
+  <meta name="description" content="Connect directly with our Private Sales Desk, Family Advisory Desk, or Pro Shop &amp; Club Desk with a plain-English reply within two minutes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark">Klipdrift Links</a>
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">The Estate</a>
+        <a href="life-here.html" class="nav-link">Life Here</a>
+        <a href="residences.html" class="nav-link">Fairway Homes</a>
+        <a href="private-visit.html" class="nav-link" aria-current="page">Private Visit</a>
+        <a href="private-visit.html#club-desk" class="nav-utility">Club &amp; Guests</a>
+      </nav>
+      <button type="button" class="menu-toggle" data-menu-open aria-expanded="false" aria-controls="mobile-drawer">
+        <span>Menu</span>
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer aria-hidden="true">
+    <div class="mobile-drawer-head">
+      <span class="brand-wordmark">Klipdrift Links</span>
+      <button type="button" class="menu-toggle" data-menu-close style="color: var(--base);">Close</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">The Estate</a></li>
+      <li><a href="life-here.html">Life Here</a></li>
+      <li><a href="residences.html">Fairway Homes</a></li>
+      <li><a href="private-visit.html">Private Visit</a></li>
+      <li><a href="private-visit.html#club-desk" class="t-accent">Club &amp; Guests</a></li>
+    </ul>
+    <p class="t-micro" style="opacity: 0.72;">Highveld &amp; Midlands Valleys, South Africa</p>
+  </div>
+
+  <main>
+    <section class="masthead surface-base">
+      <div class="container">
+        <div class="masthead-grid">
+          <div class="masthead-copy">
+            <p class="t-micro t-accent">Private Visits &amp; Estate Desks</p>
+            <h1 class="t-hero">Reach the right people first, with a clear reply in two minutes.</h1>
+            <p class="t-body t-muted">We separate property enquiries, multigenerational family tours, and visiting golf bookings so every guest speaks immediately with the right specialist.</p>
+          </div>
+          <div class="masthead-frame">
+            <img src="images/clubhouse-terrace.jpg" alt="Warm sandstone clubhouse verandah ready to welcome visiting families and golfers">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band surface-alt" id="desk-router">
+      <div class="container" data-desk-router>
+        <div class="section-head" data-reveal="text">
+          <p class="t-micro t-accent">Estate Desk Routing</p>
+          <h2 class="t-section">Choose the conversation that fits your visit.</h2>
+          <p class="t-body t-muted">Select your lane below to see how your enquiry is routed and preview the plain-English reply you receive within two minutes.</p>
+        </div>
+
+        <div class="desk-selector" role="group" aria-label="Choose your Klipdrift desk">
+          <button type="button" class="desk-option is-active" id="fairway-buyer" data-lane-trigger="fairway-buyer" aria-pressed="true">
+            <span class="t-micro desk-option__tag">Private Sales Desk</span>
+            <span class="t-sub">Fairway Home Buyer</span>
+            <span class="t-body t-muted">For buyers comparing Fairway Ridge stands, completed villas, current levies, and private site walks.</span>
+          </button>
+          <button type="button" class="desk-option" id="family-tour" data-lane-trigger="family-tour" aria-pressed="false">
+            <span class="t-micro desk-option__tag">Family Advisory Desk</span>
+            <span class="t-sub">Multigenerational Family Tour</span>
+            <span class="t-body t-muted">For extended families exploring dual-living villas, school bus routes, healthcare proximity, and relaxed weekend visits.</span>
+          </button>
+          <button type="button" class="desk-option" id="club-desk" data-lane-trigger="club-desk" aria-pressed="false">
+            <span class="t-micro desk-option__tag">Pro Shop &amp; Club Desk</span>
+            <span class="t-sub">Non-Resident Golf &amp; Clubhouse</span>
+            <span class="t-body t-muted">For visiting golfers booking tee times, small corporate fourballs, or non-resident lunch on the sandstone terrace.</span>
+          </button>
+        </div>
+
+        <div class="desk-router-grid">
+          <div>
+            <div style="margin-bottom: 2.5rem;">
+              <p class="t-micro t-accent" data-out-desk>Private Sales Desk</p>
+              <h3 class="t-sub" style="margin-top: 0.45rem;" data-out-advisor>Marius Botha · Senior Estate Advisor</h3>
+              <p class="t-body t-muted" style="margin-top: 0.65rem;" data-out-summary>For buyers comparing Fairway Ridge stands, completed villas, current levies, and private site walks.</p>
+            </div>
+
+            <form class="editorial-form" data-desk-form>
+              <div class="field-group">
+                <label class="t-micro t-muted" for="kd-name">Your Full Name</label>
+                <input class="field-input" id="kd-name" name="fullName" type="text" required data-form-name placeholder="e.g. Pieter van der Merwe">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="kd-email">Email Address</label>
+                <input class="field-input" id="kd-email" name="email" type="email" required data-form-email placeholder="name@example.co.za">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="kd-phone">Telephone Number</label>
+                <input class="field-input" id="kd-phone" name="telephone" type="tel" required data-form-phone placeholder="+27 82 000 0000">
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="kd-select" data-form-select-label>Collection of Interest</label>
+                <select class="field-select" id="kd-select" name="selection" data-form-select>
+                  <option value="Fairway Ridge Stands">Fairway Ridge Stands</option>
+                  <option value="Multigenerational Villas">Multigenerational Villas</option>
+                  <option value="Clubhouse Courtyard Waitlist">Clubhouse Courtyard Waitlist</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label class="t-micro t-muted" for="kd-date" data-form-date-label>Preferred Visit Window</label>
+                <input class="field-input" id="kd-date" name="preferredDate" type="text" data-form-date placeholder="Weekday morning or Saturday">
+              </div>
+
+              <div>
+                <button type="submit" class="btn-primary" data-form-submit>Send to Private Sales Desk</button>
+              </div>
+
+              <div class="form-feedback t-body" data-form-feedback role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 2.5rem;" aria-live="polite">
+            <div class="reply-preview-panel">
+              <div class="reply-email-head">
+                <span class="t-micro t-accent" data-out-timing>Delivered within two minutes</span>
+                <h3 class="t-sub" data-out-subject>Your Klipdrift Fairway Ridge visit &amp; current stand summary</h3>
+                <p class="t-micro t-muted" data-out-from>Marius Botha · Klipdrift Private Sales Desk</p>
+              </div>
+              <p class="t-body" data-out-body>Good day, and thank you for reaching out to Klipdrift Links. Stands 14 and 19 on Fairway Ridge are both currently available, along with Villas 04 and 07 for buyers preferring a completed residence. Monthly estate levies sit at R 4,450, which covers twenty-four-hour security, wetland and fairway upkeep, and resident clubhouse access. I have reserved two quiet morning viewing slots this Thursday and Saturday so we can walk the north-facing stands together by electric cart. Simply reply with the morning that suits you best, and I will arrange your gate clearance and coffee on the terrace.</p>
+            </div>
+
+            <div class="handoff-brief">
+              <p class="t-micro" style="color: #E2C595;">Routed Estate Desk Brief</p>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Routed To</p>
+                <p class="t-body" data-out-routed>Private Sales Desk (Marius Botha)</p>
+              </div>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Priority</p>
+                <p class="t-body" data-out-priority>Property Buyer · Site Walk &amp; Release Sheet</p>
+              </div>
+              <div>
+                <p class="t-micro" style="opacity: 0.7;">Prepared Action</p>
+                <p class="t-body" style="color: rgba(247, 244, 238, 0.86);" data-out-action>Prepare stand boundary map, current levy breakdown, and electric cart for morning fairway tour.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band surface-base">
+      <div class="container">
+        <div class="section-head" data-reveal="text">
+          <p class="t-micro t-accent">Direct Estate Details</p>
+          <h2 class="t-section">Speak with our estate team directly.</h2>
+        </div>
+
+        <div class="ledger-list">
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Address</span>
+            <span class="t-body">Klipdrift Valley Road, Highveld &amp; Midlands Valleys, South Africa</span>
+            <span class="t-micro t-muted">Viewing Hours</span>
+            <span class="t-body t-muted">Private property viewings daily by appointment, 08:00 to 17:00. Clubhouse terrace open Tuesday to Sunday, 07:00 to 21:00.</span>
+          </div>
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Private Sales Desk</span>
+            <span class="t-body">+27 11 042 8190</span>
+            <span class="t-micro t-muted">Email</span>
+            <span class="t-body">sales@klipdriftlinks.co.za</span>
+          </div>
+          <div class="ledger-row ledger-row--distance">
+            <span class="t-micro t-accent">Pro Shop &amp; Club Desk</span>
+            <span class="t-body">+27 11 042 8195</span>
+            <span class="t-micro t-muted">Email</span>
+            <span class="t-body">proshop@klipdriftlinks.co.za</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <p class="t-sub">Klipdrift Links &amp; Country Club</p>
+          <p class="t-body" style="color: rgba(247, 244, 238, 0.76); max-width: 28rem;">Dawn fairways in valley mist, warm sandstone terraces, and room for three generations to live well together.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <p class="t-micro" style="color: #E2C595;">Navigation</p>
+          <ul class="footer-nav">
+            <li><a href="index.html">The Estate</a></li>
+            <li><a href="life-here.html">Life Here</a></li>
+            <li><a href="residences.html">Fairway Homes</a></li>
+            <li><a href="private-visit.html">Private Visit</a></li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <p class="t-micro" style="color: #E2C595;">Estate Desks</p>
+          <p class="t-body" style="color: rgba(247, 244, 238, 0.78);">Klipdrift Valley Road, Highveld &amp; Midlands Valleys, South Africa</p>
+          <p class="t-micro" style="color: rgba(247, 244, 238, 0.78);">sales@klipdriftlinks.co.za</p>
+          <p class="t-micro" style="color: rgba(247, 244, 238, 0.78);">proshop@klipdriftlinks.co.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="t-micro" style="color: rgba(247, 244, 238, 0.64);">Private residential viewings by appointment. Klipdrift Links Homeowners Association.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
